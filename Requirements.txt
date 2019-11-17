@@ -1,0 +1,139 @@
+class Scrap:
+	__init__
+		- url = http://quotes.toscrape.com/page/
+		- setup of scraping process
+		- setup of data-structure (list) quotes storage
+		
+		
+
+	__repr__
+		- returns the string 'Scraping link -> ' URL
+		
+	scrapper -> takes 'soup' as argument, which is the BeautifulSoup Object
+		- scrap link -> url
+		- url may raise an ERROR. If error occurs, then EXIT
+		- create BeautifulSoup object, save it in variable 'soup'. May raise ERROR, then EXIT.
+			- if 'soup' contains one tag with class 'next', then perform steps below
+				- find all tags with class 'quote' and save it in variable 'quote' (list)
+				- for each item in list variable 'quote', do the following
+					- create an object of class Person, store object in variable 'person'
+					- append 'person' to DS quote storage (list)
+		- if Exception occur display appropiate message and exit
+	
+	get_data
+		- returns the DS quote storage (list)
+		
+class Person: -------- COMPLETE 23/8
+	__init__
+		- setup variables: quote, name, birth_date='', location='', about_link
+		- get quote text from tag 'span' having class_='text'
+		- get person name text from tag 'small' having class_='author'
+		- get person about page link from tag 'a'
+	
+	__repr__
+		- returns string 'Person class'
+	
+	more_info
+		- using 'about_link' scrap person's birth_date and location details
+		- scrap using tag class_='author_details'
+		- find class_='author-born-date' and get the text
+		- find class_='author-born-location' and get the text
+		-
+	get_quote
+		- returns the quote attribute of Person object
+	
+	get_name
+		- returns the name attribute of Person object
+	
+	get_birthdate
+		- returns birth_date attribute of Person object
+		
+	get_location
+		- returns location attribute of Person object
+	
+	get_first_letter
+		- returns first letter of Person's name
+		
+
+class Game: -------- COMPLETE 24/8
+	__init__ -> *pass DS quote storage (list) as an argument*
+		- declare a private variable 'guess_count' to count no. of guesses(max allowed 4)
+		- randomly choose from DS quote storage (list) an instance of Person
+		- store choice in variable 'game'
+
+	__repr__
+		- returns appropiate message
+		
+	get_guess_count
+		- returns the value of private variable 'guess_count'
+	
+	decrease_guess_count
+		- decrease value of private variable 'guess_count' by 1
+	
+	game_logic
+		- from 'game' attribute of class Game, (which is an instance of class Person), get the quote text
+		- store in variable quote
+		- display quote text
+		- start loop here to check 'guess_count' > 0
+			- print -> 'Guess who said ? '
+			- user input 'user_guess'
+			- call method get_guess_count() of Game class
+			- check if Person's name attribute matches guess (case in-sensitive)
+				- print -> 'Congratulations !!!'
+				- break out
+			- else if call get_guess_count(), if returned value in (1,2,3)
+				- call method get_hint() of Game class, pass variable 'guess_count' as argument
+				- print the message returned
+			- else
+				- display message 'Sorry you ran out of attempts !!!'
+				- display message showing Person's name attribute value
+		- End of Loop
+		
+	get_hint
+		- call get_guess_count() and store value in variable 'count'
+		- declare variable 'res' = ""
+		- if 'count' = 3
+			- call method more_info() of Person class
+			- call method get_birthdate() of Person class
+			- store 'birth_date' in variable 'res'
+			- returns appropiate message
+		- else if 'count' = 2
+			- call method get_location() of Person class
+			- store 'location' in variable 'res'
+			- returns appropiate message showing
+		- else
+				- call method get_first_letter() of Person class
+				- store value in 'res'
+				- returns appropiate message
+		
+		
+		
+driver code:
+	- url = http://quotes.toscrape.com/page/
+	- call Scrap class with argument 'url'
+	- set variable 'breadcrumb' = 1
+	- run infinite loop
+		- following code may run into an Exception, so use Exception handling
+			- using 'requests' module and get method request the page
+			- if condition to check if status_code of 'resp' is 200, then do the following
+				- declare variable 'soup' of BeautifulSoup object
+				- if 'soup' object contains a tag with class 'next' or class 'quote', then do the following
+					- call scrapper() method of Scrap class
+				- else
+					- break out of loop
+		- if Exception occurs, do the following
+			- display appropiate message
+			- exit
+	- end loop
+	- call method get_data() of Scrap class, store value in variable 'data'
+	- run infinite loop
+		- following code can produce Exceptions, use Exception handling
+			- declare variable 'game' and create object of Game class. Pass data as an argument
+			- call method 'game_logic' of Game class
+			- display message 'Play again (Y/y)?'
+			- take user input in variable 'play'
+			- if 'play' is not a string input and 'play' not in ('y', 'Y', 'yes', 'Yes', 'YES')
+				- display message 'Thanks for playing !!!'
+				- exit / break out of loop
+		- if Exception occur, display message 'Error'
+	- end loop
