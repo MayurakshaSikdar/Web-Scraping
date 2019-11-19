@@ -8,17 +8,21 @@
 ### _B. Tech in Computer Science & Engineering_
 ---
 <br />
+
 ### 1. ABSTRACT: 
  Web Scraping is a set of methods, which allows a user to collect information presented on the World Wide Web (WWW). It is a similar technology which is used by search engines marked as Web Crawling. Although web scraping is not a new term, in years past the practice has been more commonly known as screen scraping, data mining, web harvesting, or similar variations.
 In this project, web scraping is used to collect data from a website, which is listed as a ‘free to scrape’ website. Other websites are not being scraped due to legal issues.
+
 
 ### 2. INTRODUCTION: 
 
 In theory, web scraping is the practice of gathering data through any means other than a program interacting with an API (or, obviously, through a human using a web browser). This is most commonly accomplished by writing an automated program that queries a web server, requests data (usually in the form of the HTML and other files that comprise web pages), and then parses that data to extract needed information. 
 In practice, web scraping encompasses a wide variety of programming techniques and technologies, such as data analysis and information security. Web scrapers are excellent at gathering and processing large amounts of data (among other things). Rather than viewing one page at a time through the narrow window of a monitor, you can view databases spanning thousands or even millions of pages at once. In addition, web scrapers can go places that traditional search engines cannot. A Google search for “cheapest flights to Boston” will result in a slew of advertisements and popular flight search sites. Google only knows what these websites say on their content pages, not the exact results of various queries entered into a flight search application. However, a well-developed web scraper can chart the cost of a flight to Boston over time, across a variety of websites, and tell you the best time to buy your ticket.
 
+
 ### 3. WEB SCRAPING:
 Web scraping, also known as web extraction or harvesting, is a technique to extract data from the World Wide Web (WWW) and save it to a file system or database for later retrieval or analysis. Commonly, web data is scrapped utilizing Hypertext Transfer Protocol (HTTP) or through a web browser. This is accomplished either manually by a user or automatically by a bot or web crawler. Due to the fact that an enormous amount of heterogeneous data is constantly generated on the WWW, web scraping is widely acknowledged as an efficient and powerful technique for collecting big data.
+
 
 ### 4. PURPOSE OF WEB SCRAPING:
 #### 4.1	Market analysis and research:
@@ -81,7 +85,6 @@ Similar addressing possibility as DOM provides XPath (XML Path Language). The na
 #### 5.5	APIs:
 
 Application Programming Interface (API) expects an application as a communication partner. A standard HTTP Request sent to an API Endpoint returns an answer from server. Each API has its own specification and options. The format of the answer can be set as option in the request. The most widely used format for API communication is JSON.
-
 
 
 ### 6.	TOOLS/PLATFORM, HARDWARE AND SOFTWARE REQUIREMENT SPECIFICATIONS:
