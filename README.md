@@ -87,29 +87,35 @@ Manual scraping is still an option in specific situations. These situations are:
 •	Possibly security measures or specific characteristics of the website do not allow automated methods.
 
 <br />
+
 #### 5.2	HTML Parsing:
 
 Web sites don’t always provide their data in comfortable formats such as .csv or .json files. HTML Pages are created by the server as a response to a user’s request. At this point server software is not relevant, rather the output in the browser is important.
 
 <br />
+
 #### 5.3	DOM Parsing: 
 
 Document Object Model (DOM) Parsing is an evolution of HTML Parsing based on developments of the language and browsers which lead to the introduction of the Document Object Model. DOM is heavily used for Cascading Stylesheets (CSS) and JavaScript. Integration of DOM revealed new possibilities for addressing some specific parts of the webpage.
 
 <br />
+
 #### 5.4	XPath:
 
 Similar addressing possibility as DOM provides XPath (XML Path Language). The name suggests a usage for XML documents. It is applicable also to HTML format. XPath requires a more precisely structured webpage than DOM and has the same possibility to address segments within the webpage. 
 
 <br />
+
 #### 5.5	APIs:
 
 Application Programming Interface (API) expects an application as a communication partner. A standard HTTP Request sent to an API Endpoint returns an answer from server. Each API has its own specification and options. The format of the answer can be set as option in the request. The most widely used format for API communication is JSON.
 
 <br /><br />
+
 ### 6.	TOOLS/PLATFORM, HARDWARE AND SOFTWARE REQUIREMENT SPECIFICATIONS:
 
 <br />
+
 #### 6.1	Tools:
 
 • Microsoft VS Code
@@ -119,11 +125,13 @@ Application Programming Interface (API) expects an application as a communicatio
 • Beautiful Soup python module
 
 <br />
+
 #### 6.2	Platform
 
 •	Windows 7/8/8.1/10
 
 <br />
+
 #### 6.3	Hardware Requirements:
 
 HDD	1 GB
@@ -131,6 +139,7 @@ Processor	Pentium 4 or newer processor
 Memory	2 GB
 
 <br />
+
 #### 6.4	Software Requirements:
 
 Python	Version 3.X
@@ -139,7 +148,8 @@ BeautifulSoup module	Version 4.X
 Random module	Version 2.X
 Requests module	Version 2.X
 
-<br />
+<br /><br />
+
 ### 7.	GOALS OF IMPLEMENTATION:
 
 To extract data from website using concept and tools of web scraping in python programming language.
