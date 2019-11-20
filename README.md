@@ -26,41 +26,49 @@ Web scraping, also known as web extraction or harvesting, is a technique to extr
 
 <br /><br />
 ### 4. PURPOSE OF WEB SCRAPING:<br />
+
 #### 4.1	Market analysis and research:
 
 Data collection from online sources became one of the market research methods. It offers much faster response, compared to a classical surveying. Consumers are active in the online world and share their experience, frustration or motivation. Targeted data collection from e-shop and advertising servers helps to update Indexes. Which are based on frequently changed prices. With the increasing relevance and availability of on-line prices that we see today, it is natural to ask whether the prediction of the consumer price index (CPI), or related statistics, may usefully be computed more frequently than existing monthly schedules allow for.
 
 <br />
+
 #### 4.2 Enterprise technologies:
 
 Incompatible enterprise technologies are common by larger projects. Still a unified presentation of data from several systems is necessary. In some specific cases the solution is based on Web Scraping.
 
 <br />
+
 #### 4.3 Opinion Poll:
 
 Movie Producers collect data about their current blockbusters. Such data includes the user feedback, if this was shared on the movie portals in a review.
 
 <br />
+
 #### 4.4	Human Resources Agencies:
 
 Human resource (HR) departments in large companies process many jobs offers for their companies and try to match the position with prospective employees. It’s not sufficient to use only incoming vacancy requests from candidates. HR Departments also cooperate with 3rd Party companies, which can offer them own directories of professionals. Contact mining is an important activity for such agencies.
 
 <br />
+
 #### 4.5	Social Network mining:
 
 Social media (such as blogs, online social networks, microblogs) has become one of the major data sources for quantitative communication research over the past decade. By employing simple programing tools, researchers can extract relevant messages from social media platforms for various research purposes.
 
 <br />
+
 #### 4.6	Government Services:
 
 The Monitoring of criminal activities on social websites and specific forums is an important source of information for Government Agencies and Law Enforcement bodies. 
 
 <br />
+
 #### 4.7	Corporate spying:
 
 In the corporate context, web scraping allows for a company to review both their own and the appearance of competitors in headlines of news servers. A company can also collect details about competitors and even about its own employees.
 
 <br />
+
 #### 4.8	Social Mining and Sentiment Analysis:
 
 Social media is a new source of data that is significantly different from conventional ones. Social media data sets are mostly user-generated, and are big, interlinked, and heterogeneous.
